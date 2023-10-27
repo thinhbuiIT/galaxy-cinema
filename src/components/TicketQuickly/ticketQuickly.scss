@@ -1,0 +1,25 @@
+@import '../../index.scss';
+
+.box-buy-ticket {
+
+    :where(.css-dev-only-do-not-override-nnuwmp).ant-tabs .ant-tabs-ink-bar {
+        position: absolute;
+        background: $primary_color;
+        pointer-events: none;
+    }
+
+    .ant-select-arrow {
+        color: #fff;
+    }
+
+    // .ant-tabs {
+    //     padding: 0 1rem;
+    //     color: #fff;
+    // }
+
+    &__title {
+        padding: .7rem 1rem;
+        background-color: $primary_color;
+        color: #fff;
+    }
+}

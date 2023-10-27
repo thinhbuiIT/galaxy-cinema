@@ -1,0 +1,83 @@
+@import '../../../index.scss';
+
+.ticketByFilm {
+
+    &__film {
+        &--title {
+            background-color: $primary_color;
+            text-transform: uppercase;
+            font-weight: 500;
+            padding: 10px 0;
+            color: #fff;
+            width: 100%;
+            text-align: center;
+        }
+
+        &--list {
+
+            .list__block {
+                border: 1px solid rgba($color: #000000, $alpha: .2);
+                border-top: none;
+                padding: 10px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: rgba($color: #000000, $alpha: .1);
+                    color: $primary_color;
+                }
+
+                &--title {
+                    padding: 10px;
+                }
+
+                img {
+                    width: 25%;
+                    height: 25%;
+                }
+
+                &--content {
+                    padding: 0 10px;
+                    margin-right: auto;
+
+                    h2 {
+                        font-size: 1rem;
+                        text-transform: uppercase;
+                    }
+
+                    p {
+                        color: $paragraph_color;
+                        text-transform: uppercase;
+                    }
+                }
+
+                &--age {
+                    span {
+                        background-color: $primary_color;
+                        text-align: center;
+                        color: #fff;
+                    }
+                }
+
+            }
+
+            .show__time {
+                border: 1px solid rgba($color: #000000, $alpha: .2);
+                border-top: none;
+
+                &--content {}
+
+                &--list {}
+
+                &--items {
+                    border: 1px solid rgba($color: #000000, $alpha: .4);
+
+                    &:hover {
+                        cursor: pointer;
+                        border-color: $primary_color;
+                        color: $primary_color;
+                    }
+                }
+            }
+        }
+    }
+}
